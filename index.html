@@ -198,17 +198,11 @@
       background:#fff;
       color:var(--ink);
     }
-    .hero-note{
-      margin-top:20px;
-      color:#768179;
-      font-size:12px;
-      line-height:1.6;
-    }
     .hero-points{
       display:flex;
       flex-wrap:wrap;
       gap:10px 18px;
-      margin-top:18px;
+      margin-top:24px;
       padding-top:18px;
       border-top:1px solid #e1e6e2;
       max-width:650px;
@@ -315,77 +309,6 @@
       font-weight:750;
       font-size:12px;
     }
-    .visual-metrics{
-      position:relative;
-      z-index:2;
-      display:grid;
-      grid-template-columns:minmax(0,1fr) 220px;
-      gap:12px;
-      margin:14px 0 0 30px;
-    }
-    .prompt-card,
-    .score-card{
-      min-width:0;
-      border:1px solid #dfe6e0;
-      background:#fff;
-      border-radius:20px;
-      box-shadow:0 18px 42px rgba(27,44,33,.10);
-      padding:18px;
-    }
-    .prompt-card{
-      display:grid;
-      grid-template-columns:auto 1fr;
-      grid-template-rows:auto auto;
-      column-gap:14px;
-      align-items:center;
-    }
-    .prompt-card strong{
-      grid-row:1 / 3;
-      font-size:38px;
-      line-height:1;
-      letter-spacing:-.05em;
-      color:var(--ink);
-    }
-    .prompt-card span:first-of-type{
-      align-self:end;
-      color:#7a857e;
-      font-size:10px;
-      font-weight:800;
-      text-transform:uppercase;
-      letter-spacing:.08em;
-    }
-    .prompt-card span:last-of-type{
-      align-self:start;
-      color:#5d6a61;
-      font-size:12px;
-      line-height:1.4;
-    }
-    .score-card{
-      width:auto;
-    }
-    .score-head{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      color:#7a857e;
-      font-size:11px;
-      font-weight:700;
-    }
-    .score-number{
-      font-size:42px;
-      line-height:1;
-      margin:9px 0 10px;
-      letter-spacing:-.05em;
-      font-weight:800;
-    }
-    .score-bar{
-      height:7px;
-      border-radius:999px;
-      background:#edf1ee;
-      overflow:hidden;
-    }
-    .score-bar span{display:block;height:100%;width:78%;background:var(--green-2)}
-    .score-foot{font-size:11px;color:#5d6a61;margin-top:9px}
 
     .platforms{
       padding:30px 0 70px;
@@ -651,19 +574,6 @@
       margin:0;
       font-size:28px;
       letter-spacing:-.035em;
-    }
-    .sample-note{
-      display:inline-flex;
-      margin-bottom:12px;
-      padding:6px 9px;
-      border:1px solid #dfe6e0;
-      border-radius:999px;
-      color:#758078;
-      background:#f8faf8;
-      font-size:10px;
-      font-weight:800;
-      text-transform:uppercase;
-      letter-spacing:.08em;
     }
     .proof-main p{
       color:#657169;
@@ -1077,7 +987,7 @@
       }
       .hero-grid,.services-layout,.cta,.faq-shell{grid-template-columns:1fr}
       .visual{max-width:680px;width:100%}
-      .browser,.visual-metrics{margin-left:0}
+      .browser{margin-left:0}
       .sticky,.faq-intro{position:static}
       .framework-grid{grid-template-columns:1fr 1fr}
       .use-grid{grid-template-columns:1fr 1fr}
@@ -1099,9 +1009,6 @@
       .platform-grid{grid-template-columns:1fr 1fr}
       .browser{margin-top:20px}
       .visual{min-height:0}
-      .visual-metrics{grid-template-columns:1fr 1fr}
-      .prompt-card,.score-card{padding:15px}
-      .prompt-card strong{font-size:34px}
       .service-row{grid-template-columns:46px 1fr}
       .service-tag{display:none}
       .metric-grid{grid-template-columns:1fr 1fr}
@@ -1118,7 +1025,6 @@
 
     @media (max-width:460px){
       h1{font-size:42px}
-      .visual-metrics{grid-template-columns:1fr}
       .platform-grid{grid-template-columns:1fr}
       .metric-grid{grid-template-columns:1fr}
     }
@@ -1287,10 +1193,6 @@
           <a class="btn btn-primary" href="#audit" title="Request an AI Search Visibility Audit">Request an AI Visibility Audit →</a>
           <a class="btn btn-secondary" href="#framework" title="Explore the OurGEO Framework">Explore the framework</a>
         </div>
-
-        <div class="hero-note">
-          Built for companies, organizations and brands across sectors—from growing teams to established enterprises—serving English-speaking and international markets.
-        </div>
         <div class="hero-points" aria-label="OurGEO capabilities">
           <span class="hero-point">Technical SEO foundations</span>
           <span class="hero-point">Entity & structured data</span>
@@ -1332,8 +1234,6 @@
             </div>
           </div>
         </div>
-
-        <div class="visual-metrics"><div class="prompt-card"><strong>120</strong><span>Prompt monitoring</span><span>priority prompts tracked</span></div><div class="score-card"><div class="score-head"><span>Visibility index</span><span>Sample</span></div><div class="score-number">78</div><div class="score-bar"><span></span></div><div class="score-foot">Illustrative benchmark view</div></div></div>
       </div>
     </div>
   </section>
@@ -1409,7 +1309,7 @@
         <h2>A disciplined GEO program, built on strong SEO fundamentals.</h2>
         <p style="color:#647067;line-height:1.7">
           We connect technical foundations, entity clarity, structured data, content architecture and ongoing measurement
-          into a practical program designed for companies operating in English-language and international markets.
+          into a focused program for stronger visibility across search and AI-assisted discovery.
         </p>
       </div>
 
@@ -1520,10 +1420,10 @@
     <div class="container">
       <div class="section-head">
         <span class="kicker">Who we help</span>
-        <h2>Built for organizations of every kind.</h2>
+        <h2>Visibility strategies for different business models.</h2>
         <p>
-          Whether you sell products, services, software, expertise or experiences, OurGEO helps turn your website, brand knowledge and market authority
-          into clearer, more credible sources for search engines, AI systems and the people making decisions.
+          OurGEO aligns technical foundations, entity clarity and content architecture with the way people discover, compare and evaluate products,
+          services, software and expertise across search and AI-assisted journeys.
         </p>
       </div>
 
@@ -1596,29 +1496,28 @@
 
       <div class="proof-grid">
         <div class="proof-main">
-          <div class="sample-note">Illustrative reporting view</div>
           <h3>AI Visibility Dashboard</h3>
           <p>
-            A practical operating view of priority prompts, brand presence, source coverage, content gaps and competitor movement
-            across the AI-assisted research journey. Metrics shown below are illustrative, not client performance claims.
+            A practical operating view of prompt coverage, brand presence, cited-source visibility, content gaps and competitor movement
+            across AI-assisted discovery.
           </p>
 
           <div class="metric-grid">
             <div class="metric">
-              <strong>120</strong>
-              <span>Tracked prompts</span>
+              <strong>Prompt</strong>
+              <span>Coverage</span>
             </div>
             <div class="metric">
-              <strong>42</strong>
-              <span>Brand mentions</span>
+              <strong>Brand</strong>
+              <span>Presence</span>
             </div>
             <div class="metric">
-              <strong>78</strong>
-              <span>Visibility index</span>
+              <strong>Source</strong>
+              <span>Visibility</span>
             </div>
             <div class="metric">
-              <strong>+18%</strong>
-              <span>Coverage change</span>
+              <strong>Content</strong>
+              <span>Readiness</span>
             </div>
           </div>
         </div>
@@ -1721,9 +1620,8 @@
           <span class="cta-kicker">AI Search Visibility Audit</span>
           <h2>Understand where your brand stands—and what to improve next.</h2>
           <p>
-            Share your website, target markets and commercial priorities. We will use that context to identify
-            the highest-value opportunities across technical SEO, entity clarity, structured data, answer coverage
-            and AI-assisted discovery.
+            Share your website and priorities. We will identify the highest-value opportunities across technical SEO,
+            entity clarity, structured data, answer coverage and AI-assisted discovery.
           </p>
 
           <ul class="audit-points">
@@ -1735,7 +1633,6 @@
 
           <div class="audit-contact">
             <span>Prefer email? <a href="mailto:info@ourgeo.com" title="Email OurGEO at info@ourgeo.com">info@ourgeo.com</a></span>
-            <span>English-language markets · Businesses across sectors</span>
           </div>
         </div>
 
@@ -1795,7 +1692,7 @@
             </div>
             <div class="form-group full">
               <label class="form-label" for="auditMessage">What would you like to improve?</label>
-              <textarea class="field" id="auditMessage" name="message" placeholder="Tell us about your market, current search visibility, target customers or GEO goals."></textarea>
+              <textarea class="field" id="auditMessage" name="message" placeholder="Tell us what you want to improve across search, content or AI visibility."></textarea>
             </div>
             <button class="btn full" type="submit" id="auditSubmit">Request AI Visibility Audit →</button>
             <div class="form-note">By submitting this form, you agree that we may use the information provided to respond to your inquiry.</div>
