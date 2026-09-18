@@ -1,0 +1,1607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="OurGEO helps B2B companies and brands improve AI search visibility through GEO, technical SEO, entity optimization, structured data and answer-ready content." />
+  <meta name="keywords" content="Generative Engine Optimization, GEO, AI Search Optimization, AI Visibility, Answer Engine Optimization, AEO, Entity SEO, Structured Data, Technical SEO, ChatGPT Search, Google AI Overviews, Perplexity" />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+  <meta name="googlebot" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+  <meta name="bingbot" content="index,follow" />
+  <meta name="author" content="Our.Marketing" />
+  <meta name="publisher" content="Our.Marketing" />
+  <meta name="application-name" content="OurGEO" />
+  <meta name="theme-color" content="#176b4b" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+  <link rel="canonical" href="https://www.ourgeo.com/" />
+  <link rel="alternate" hreflang="en" href="https://www.ourgeo.com/" />
+  <link rel="alternate" hreflang="x-default" href="https://www.ourgeo.com/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="OurGEO" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:url" content="https://www.ourgeo.com/" />
+  <meta property="og:title" content="OurGEO | Generative Engine Optimization & AI Search Visibility" />
+  <meta property="og:description" content="Build stronger visibility across AI search and generative answers with GEO, technical SEO, entity optimization, structured data and answer-ready content." />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="OurGEO | Generative Engine Optimization & AI Search Visibility" />
+  <meta name="twitter:description" content="Build stronger visibility across AI search and generative answers with GEO, technical SEO, entity optimization, structured data and answer-ready content." />
+
+  <title>OurGEO | Generative Engine Optimization & AI Search Visibility</title>
+
+  <style>
+    :root{
+      --bg:#f7f8f6;
+      --surface:#ffffff;
+      --surface-2:#f0f3ef;
+      --ink:#101411;
+      --ink-soft:#4f5a53;
+      --muted:#7a857e;
+      --line:#e3e8e3;
+      --green:#176b4b;
+      --green-2:#1f8a61;
+      --green-soft:#eaf5ef;
+      --blue:#3259d9;
+      --blue-soft:#eef2ff;
+      --sand:#f4efe6;
+      --max:1200px;
+      --radius:24px;
+      --shadow:0 24px 70px rgba(22,35,27,.08);
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      color:var(--ink);
+      background:var(--bg);
+      font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      -webkit-font-smoothing:antialiased;
+      overflow-x:hidden;
+    }
+    a{text-decoration:none;color:inherit}
+    button,input,textarea,select{font:inherit}
+    .container{width:min(var(--max),calc(100% - 40px));margin:0 auto}
+
+    header{
+      position:sticky;
+      top:0;
+      z-index:50;
+      background:rgba(247,248,246,.9);
+      backdrop-filter:blur(18px);
+      border-bottom:1px solid rgba(16,20,17,.06);
+    }
+    .nav{
+      height:76px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:24px;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      font-weight:800;
+      letter-spacing:-.03em;
+      font-size:20px;
+    }
+    .brand-mark{
+      width:34px;
+      height:34px;
+      border-radius:11px;
+      display:grid;
+      place-items:center;
+      background:var(--ink);
+      color:#fff;
+      font-size:15px;
+      font-weight:900;
+    }
+    .nav-links{
+      display:flex;
+      align-items:center;
+      gap:28px;
+      font-size:14px;
+      color:#56615a;
+      font-weight:650;
+    }
+    .nav-links a:hover{color:var(--ink)}
+    .nav-btn{
+      padding:11px 17px;
+      border-radius:999px;
+      background:var(--ink);
+      color:white;
+      font-weight:750;
+    }
+    .menu-btn{
+      display:none;
+      border:0;
+      background:transparent;
+      font-size:26px;
+      color:var(--ink);
+    }
+
+    .hero{
+      padding:90px 0 60px;
+    }
+    .hero-grid{
+      display:grid;
+      grid-template-columns:1.08fr .92fr;
+      align-items:center;
+      gap:58px;
+    }
+    .eyebrow{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      border:1px solid #cfd8d1;
+      border-radius:999px;
+      padding:7px 11px;
+      background:#fff;
+      color:#536158;
+      font-size:12px;
+      font-weight:750;
+      letter-spacing:.04em;
+      text-transform:uppercase;
+    }
+    .eyebrow i{
+      width:7px;height:7px;border-radius:50%;background:var(--green-2);
+    }
+    h1{
+      margin:20px 0 22px;
+      font-size:clamp(50px,7vw,84px);
+      line-height:.98;
+      letter-spacing:-.06em;
+      max-width:760px;
+    }
+    .hero-highlight{
+      color:var(--green);
+    }
+    .hero-copy{
+      max-width:680px;
+      color:var(--ink-soft);
+      font-size:18px;
+      line-height:1.75;
+    }
+    .hero-actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      margin-top:32px;
+    }
+    .btn{
+      display:inline-flex;
+      justify-content:center;
+      align-items:center;
+      gap:8px;
+      min-height:50px;
+      padding:0 20px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      font-weight:750;
+      font-size:14px;
+      transition:.2s ease;
+      cursor:pointer;
+    }
+    .btn:hover{transform:translateY(-2px)}
+    .btn-primary{
+      background:var(--ink);
+      color:#fff;
+      border-color:var(--ink);
+      box-shadow:0 12px 26px rgba(16,20,17,.12);
+    }
+    .btn-secondary{
+      background:#fff;
+      color:var(--ink);
+    }
+    .hero-note{
+      margin-top:20px;
+      color:#7e8881;
+      font-size:12px;
+    }
+
+    .visual{
+      position:relative;
+      min-height:0;
+      padding-bottom:4px;
+    }
+    .soft-orb{
+      position:absolute;
+      width:340px;height:340px;
+      border-radius:50%;
+      background:radial-gradient(circle,#ccebd9 0%,rgba(204,235,217,.15) 60%,transparent 72%);
+      top:-20px;right:-30px;
+      filter:blur(2px);
+    }
+    .browser{
+      position:relative;
+      z-index:1;
+      margin:36px 0 0 30px;
+      background:#fff;
+      border:1px solid #dfe6e0;
+      border-radius:26px;
+      box-shadow:var(--shadow);
+      overflow:hidden;
+    }
+    .browser-top{
+      height:48px;
+      border-bottom:1px solid var(--line);
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:0 16px;
+      background:#fbfcfb;
+    }
+    .dots{display:flex;gap:6px}
+    .dots span{width:8px;height:8px;border-radius:50%;background:#d5ddd6}
+    .url{
+      font-size:11px;
+      color:#8b958e;
+      padding:5px 12px;
+      border:1px solid #e6ebe7;
+      border-radius:999px;
+      background:#fff;
+    }
+    .browser-body{padding:22px}
+    .mini-label{
+      font-size:11px;
+      color:#6f7c73;
+      font-weight:750;
+      margin-bottom:8px;
+      text-transform:uppercase;
+      letter-spacing:.05em;
+    }
+    .query-box{
+      background:#f6f8f6;
+      border:1px solid #e2e8e3;
+      border-radius:16px;
+      padding:15px;
+      font-size:14px;
+      font-weight:650;
+      line-height:1.5;
+    }
+    .answer-card{
+      margin-top:14px;
+      border:1px solid #dde5df;
+      border-radius:18px;
+      padding:18px;
+      background:#fff;
+    }
+    .answer-card p{
+      margin:0;
+      color:#56625a;
+      font-size:13px;
+      line-height:1.7;
+    }
+    .brand-chip{
+      display:inline-flex;
+      align-items:center;
+      gap:7px;
+      margin-top:12px;
+      padding:7px 10px;
+      background:var(--green-soft);
+      color:var(--green);
+      border-radius:999px;
+      font-weight:750;
+      font-size:12px;
+    }
+    .visual-metrics{
+      position:relative;
+      z-index:2;
+      display:grid;
+      grid-template-columns:minmax(0,1fr) 220px;
+      gap:12px;
+      margin:14px 0 0 30px;
+    }
+    .prompt-card,
+    .score-card{
+      min-width:0;
+      border:1px solid #dfe6e0;
+      background:#fff;
+      border-radius:20px;
+      box-shadow:0 18px 42px rgba(27,44,33,.10);
+      padding:18px;
+    }
+    .prompt-card{
+      display:grid;
+      grid-template-columns:auto 1fr;
+      grid-template-rows:auto auto;
+      column-gap:14px;
+      align-items:center;
+    }
+    .prompt-card strong{
+      grid-row:1 / 3;
+      font-size:38px;
+      line-height:1;
+      letter-spacing:-.05em;
+      color:var(--ink);
+    }
+    .prompt-card span:first-of-type{
+      align-self:end;
+      color:#7a857e;
+      font-size:10px;
+      font-weight:800;
+      text-transform:uppercase;
+      letter-spacing:.08em;
+    }
+    .prompt-card span:last-of-type{
+      align-self:start;
+      color:#5d6a61;
+      font-size:12px;
+      line-height:1.4;
+    }
+    .score-card{
+      width:auto;
+    }
+    .score-head{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      color:#7a857e;
+      font-size:11px;
+      font-weight:700;
+    }
+    .score-number{
+      font-size:42px;
+      line-height:1;
+      margin:9px 0 10px;
+      letter-spacing:-.05em;
+      font-weight:800;
+    }
+    .score-bar{
+      height:7px;
+      border-radius:999px;
+      background:#edf1ee;
+      overflow:hidden;
+    }
+    .score-bar span{display:block;height:100%;width:78%;background:var(--green-2)}
+    .score-foot{font-size:11px;color:#5d6a61;margin-top:9px}
+
+    .platforms{
+      padding:30px 0 70px;
+    }
+    .platform-label{
+      text-align:center;
+      color:#86918a;
+      font-size:11px;
+      text-transform:uppercase;
+      letter-spacing:.14em;
+      font-weight:800;
+      margin-bottom:16px;
+    }
+    .platform-grid{
+      display:grid;
+      grid-template-columns:repeat(5,1fr);
+      gap:10px;
+    }
+    .platform{
+      min-height:68px;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      border:1px solid #e1e7e2;
+      border-radius:18px;
+      background:#fff;
+      font-size:14px;
+      font-weight:700;
+      color:#5a665f;
+    }
+
+    section{padding:96px 0}
+    .section-head{
+      max-width:760px;
+      margin-bottom:44px;
+    }
+    .kicker{
+      color:var(--green);
+      font-size:12px;
+      font-weight:800;
+      text-transform:uppercase;
+      letter-spacing:.12em;
+    }
+    h2{
+      margin:12px 0 16px;
+      font-size:clamp(36px,5vw,56px);
+      line-height:1.06;
+      letter-spacing:-.045em;
+    }
+    .section-head p{
+      margin:0;
+      color:#5d6961;
+      font-size:17px;
+      line-height:1.7;
+    }
+
+    .why{
+      background:#fff;
+      border-top:1px solid #e7ebe7;
+      border-bottom:1px solid #e7ebe7;
+    }
+    .why-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:16px;
+    }
+    .why-card{
+      padding:30px;
+      min-height:250px;
+      border-radius:24px;
+      border:1px solid #e1e7e2;
+      background:#fbfcfb;
+    }
+    .why-card:nth-child(2){background:var(--green-soft)}
+    .why-card:nth-child(3){background:var(--blue-soft)}
+    .why-card:nth-child(4){background:var(--sand)}
+    .why-no{
+      font-size:12px;
+      font-weight:800;
+      color:#77837a;
+    }
+    .why-card h3{
+      font-size:24px;
+      margin:34px 0 12px;
+      letter-spacing:-.025em;
+    }
+    .why-card p{
+      color:#657068;
+      font-size:14px;
+      line-height:1.7;
+      margin:0;
+      max-width:520px;
+    }
+
+    .services{
+      background:var(--bg);
+    }
+    .services-layout{
+      display:grid;
+      grid-template-columns:.75fr 1.25fr;
+      gap:42px;
+      align-items:start;
+    }
+    .sticky{
+      position:sticky;
+      top:115px;
+    }
+    .service-list{
+      border-top:1px solid #dfe5e0;
+    }
+    .service-row{
+      display:grid;
+      grid-template-columns:54px 1fr auto;
+      gap:20px;
+      align-items:start;
+      padding:26px 0;
+      border-bottom:1px solid #dfe5e0;
+    }
+    .service-icon{
+      width:46px;height:46px;
+      border-radius:14px;
+      display:grid;
+      place-items:center;
+      border:1px solid #dfe6e0;
+      background:#fff;
+      font-weight:800;
+      color:var(--green);
+    }
+    .service-row h3{
+      margin:0 0 8px;
+      font-size:21px;
+      letter-spacing:-.025em;
+    }
+    .service-row p{
+      margin:0;
+      color:#657169;
+      font-size:14px;
+      line-height:1.65;
+      max-width:600px;
+    }
+    .service-tag{
+      align-self:center;
+      padding:6px 9px;
+      border-radius:999px;
+      background:#fff;
+      border:1px solid #dfe6e0;
+      color:#7a867e;
+      font-size:10px;
+      font-weight:800;
+      text-transform:uppercase;
+      letter-spacing:.08em;
+    }
+
+    .framework{
+      background:#101411;
+      color:#fff;
+    }
+    .framework .kicker{color:#77d9ad}
+    .framework .section-head p{color:#aeb8b1}
+    .framework-grid{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:14px;
+    }
+    .step{
+      min-height:300px;
+      padding:26px;
+      border-radius:22px;
+      border:1px solid rgba(255,255,255,.12);
+      background:rgba(255,255,255,.04);
+    }
+    .step-no{
+      font-size:12px;
+      color:#79dcb0;
+      font-weight:800;
+    }
+    .step h3{
+      margin:42px 0 12px;
+      font-size:22px;
+      letter-spacing:-.02em;
+    }
+    .step p{
+      margin:0;
+      color:#aeb9b2;
+      font-size:14px;
+      line-height:1.7;
+    }
+
+    .use-cases{
+      background:#fff;
+      border-bottom:1px solid #e6ebe6;
+    }
+    .use-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:16px;
+    }
+    .use-card{
+      padding:28px;
+      border-radius:24px;
+      border:1px solid #e0e6e1;
+      background:#fff;
+    }
+    .use-card:nth-child(1){box-shadow:inset 0 4px 0 var(--green-2)}
+    .use-card:nth-child(2){box-shadow:inset 0 4px 0 var(--blue)}
+    .use-card:nth-child(3){box-shadow:inset 0 4px 0 #c99f50}
+    .use-tag{
+      font-size:11px;
+      text-transform:uppercase;
+      letter-spacing:.1em;
+      color:#7d8881;
+      font-weight:800;
+    }
+    .use-card h3{
+      font-size:23px;
+      margin:22px 0 12px;
+      letter-spacing:-.025em;
+    }
+    .use-card p{
+      color:#667169;
+      font-size:14px;
+      line-height:1.7;
+    }
+    .prompt-list{
+      list-style:none;
+      padding:0;
+      margin:22px 0 0;
+    }
+    .prompt-list li{
+      padding:11px 0;
+      border-top:1px solid #edf0ed;
+      font-size:13px;
+      color:#47534b;
+    }
+
+    .proof{
+      background:var(--bg);
+    }
+    .proof-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:18px;
+      align-items:stretch;
+    }
+    .proof-main{
+      padding:34px;
+      border-radius:26px;
+      border:1px solid #dfe5e0;
+      background:#fff;
+    }
+    .proof-main h3{
+      margin:0;
+      font-size:28px;
+      letter-spacing:-.035em;
+    }
+    .sample-note{
+      display:inline-flex;
+      margin-bottom:12px;
+      padding:6px 9px;
+      border:1px solid #dfe6e0;
+      border-radius:999px;
+      color:#758078;
+      background:#f8faf8;
+      font-size:10px;
+      font-weight:800;
+      text-transform:uppercase;
+      letter-spacing:.08em;
+    }
+    .proof-main p{
+      color:#657169;
+      font-size:14px;
+      line-height:1.7;
+      max-width:560px;
+    }
+    .metric-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:12px;
+      margin-top:28px;
+    }
+    .metric{
+      padding:20px;
+      border-radius:18px;
+      background:#f7f9f7;
+      border:1px solid #e5eae6;
+    }
+    .metric strong{
+      display:block;
+      font-size:28px;
+      letter-spacing:-.04em;
+    }
+    .metric span{
+      font-size:11px;
+      color:#7c877f;
+      text-transform:uppercase;
+      letter-spacing:.08em;
+      font-weight:800;
+    }
+    .proof-side{
+      display:grid;
+      gap:18px;
+    }
+    .side-card{
+      padding:28px;
+      border-radius:24px;
+      border:1px solid #e0e6e1;
+      background:#fff;
+    }
+    .side-card h4{
+      margin:0 0 8px;
+      font-size:20px;
+    }
+    .side-card p{
+      margin:0;
+      color:#68736b;
+      font-size:14px;
+      line-height:1.7;
+    }
+
+    .faq{
+      background:#fff;
+    }
+    .faq-wrap{max-width:900px}
+    .faq-item{
+      border-top:1px solid #e3e8e4;
+    }
+    .faq-item:last-child{border-bottom:1px solid #e3e8e4}
+    .faq-q{
+      width:100%;
+      background:none;
+      border:0;
+      padding:22px 0;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:20px;
+      text-align:left;
+      font-size:16px;
+      font-weight:750;
+      cursor:pointer;
+      color:var(--ink);
+    }
+    .faq-q span:last-child{
+      color:#849088;
+      font-size:24px;
+      font-weight:400;
+      transition:.2s;
+    }
+    .faq-a{
+      display:none;
+      padding:0 46px 22px 0;
+      color:#647067;
+      font-size:14px;
+      line-height:1.7;
+    }
+    .faq-item.active .faq-a{display:block}
+    .faq-item.active .faq-q span:last-child{transform:rotate(45deg)}
+
+    .cta-section{
+      padding:92px 0;
+    }
+    .cta{
+      position:relative;
+      overflow:hidden;
+      display:grid;
+      grid-template-columns:.9fr 1.1fr;
+      gap:46px;
+      padding:52px;
+      border-radius:30px;
+      background:var(--green);
+      color:#fff;
+    }
+    .cta:after{
+      content:"";
+      position:absolute;
+      width:360px;height:360px;
+      right:-120px;top:-120px;
+      border-radius:50%;
+      background:rgba(255,255,255,.08);
+    }
+    .cta h2{
+      margin:0 0 16px;
+      font-size:44px;
+      max-width:560px;
+    }
+    .cta p{
+      margin:0;
+      color:#d7eee3;
+      font-size:15px;
+      line-height:1.7;
+    }
+    .form{
+      position:relative;
+      z-index:2;
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:10px;
+    }
+    .field{
+      width:100%;
+      height:52px;
+      border:1px solid rgba(255,255,255,.3);
+      border-radius:14px;
+      padding:0 14px;
+      color:#fff;
+      background:rgba(255,255,255,.1);
+      outline:none;
+    }
+    .field::placeholder{color:rgba(255,255,255,.72)}
+    textarea.field{height:104px;padding-top:13px;resize:vertical}
+    select.field option{color:#111}
+    .full{grid-column:1/-1}
+    .form .btn{
+      background:#fff;
+      color:var(--green);
+      border:0;
+    }
+    .form-status{
+      display:none;
+      grid-column:1/-1;
+      color:#d9f0e4;
+      font-size:12px;
+      margin-top:5px;
+    }
+
+    footer{
+      padding:50px 0 32px;
+      background:#f3f5f2;
+      border-top:1px solid #e2e7e2;
+    }
+    .footer-grid{
+      display:grid;
+      grid-template-columns:1.4fr .6fr .6fr;
+      gap:32px;
+    }
+    .footer-copy{
+      max-width:440px;
+      color:#6e7971;
+      font-size:13px;
+      line-height:1.7;
+    }
+    .footer-parent{
+      display:inline-flex;
+      align-items:center;
+      gap:7px;
+      margin-top:4px;
+      padding:7px 10px;
+      border:1px solid #dce3dd;
+      border-radius:999px;
+      background:#fff;
+      color:#657168;
+      font-size:11px;
+      font-weight:700;
+    }
+    .footer-parent strong{
+      color:var(--ink);
+      letter-spacing:-.01em;
+    }
+    .footer-legal{
+      display:flex;
+      align-items:center;
+      flex-wrap:wrap;
+      gap:14px;
+    }
+    .footer-legal a{
+      color:#7f8a82;
+      transition:.2s ease;
+    }
+    .footer-legal a:hover{
+      color:var(--ink);
+    }
+    .footer-col strong{
+      display:block;
+      font-size:13px;
+      margin-bottom:12px;
+    }
+    .footer-col a{
+      display:block;
+      color:#748078;
+      font-size:13px;
+      margin:9px 0;
+    }
+    .copyright{
+      margin-top:30px;
+      padding-top:22px;
+      border-top:1px solid #dde3de;
+      display:flex;
+      justify-content:space-between;
+      gap:20px;
+      color:#879189;
+      font-size:12px;
+    }
+
+    @media (max-width:1000px){
+      .nav-links{display:none}
+      .menu-btn{display:block}
+      .nav-links.mobile-open{
+        display:flex;
+        position:absolute;
+        top:76px;
+        left:20px;
+        right:20px;
+        padding:18px;
+        border:1px solid #dde4de;
+        border-radius:18px;
+        background:#fff;
+        box-shadow:var(--shadow);
+        flex-direction:column;
+        align-items:stretch;
+        gap:10px;
+      }
+      .hero-grid,.services-layout,.cta{grid-template-columns:1fr}
+      .visual{max-width:680px;width:100%}
+      .browser,.visual-metrics{margin-left:0}
+      .sticky{position:static}
+      .framework-grid{grid-template-columns:1fr 1fr}
+      .use-grid{grid-template-columns:1fr 1fr}
+      .proof-grid{grid-template-columns:1fr}
+      .platform-grid{grid-template-columns:repeat(3,1fr)}
+    }
+
+    @media (max-width:680px){
+      .container{width:min(var(--max),calc(100% - 28px))}
+      .hero{padding-top:56px}
+      h1{font-size:48px}
+      section{padding:72px 0}
+      .why-grid,.use-grid,.framework-grid,.footer-grid{grid-template-columns:1fr}
+      .platform-grid{grid-template-columns:1fr 1fr}
+      .browser{margin-top:20px}
+      .visual{min-height:0}
+      .visual-metrics{grid-template-columns:1fr 1fr}
+      .prompt-card,.score-card{padding:15px}
+      .prompt-card strong{font-size:34px}
+      .service-row{grid-template-columns:46px 1fr}
+      .service-tag{display:none}
+      .metric-grid{grid-template-columns:1fr 1fr}
+      .cta{padding:32px 22px}
+      .cta h2{font-size:38px}
+      .form{grid-template-columns:1fr}
+      .full{grid-column:auto}
+      .copyright{flex-direction:column}
+    }
+
+    @media (max-width:460px){
+      h1{font-size:42px}
+      .visual-metrics{grid-template-columns:1fr}
+      .platform-grid{grid-template-columns:1fr}
+      .metric-grid{grid-template-columns:1fr}
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.our.marketing/#organization",
+        "name": "Our.Marketing",
+        "url": "https://www.our.marketing/",
+        "email": "info@ourgeo.com",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "sales and business inquiries",
+          "email": "info@ourgeo.com",
+          "availableLanguage": ["English"],
+          "areaServed": ["US", "GB", "CA", "AU", "EU"]
+        },
+        "brand": {
+          "@type": "Brand",
+          "@id": "https://www.ourgeo.com/#brand",
+          "name": "OurGEO",
+          "url": "https://www.ourgeo.com/"
+        },
+        "knowsAbout": [
+          "Generative Engine Optimization",
+          "AI Search Visibility",
+          "Answer Engine Optimization",
+          "Technical SEO",
+          "Entity Optimization",
+          "Structured Data",
+          "Content Strategy",
+          "AI Citation Monitoring"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.ourgeo.com/#website",
+        "url": "https://www.ourgeo.com/",
+        "name": "OurGEO",
+        "publisher": {"@id": "https://www.our.marketing/#organization"},
+        "inLanguage": "en"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://www.ourgeo.com/#webpage",
+        "url": "https://www.ourgeo.com/",
+        "name": "OurGEO | Generative Engine Optimization & AI Search Visibility",
+        "description": "OurGEO helps B2B companies and brands improve AI search visibility through GEO, technical SEO, entity optimization, structured data and answer-ready content.",
+        "isPartOf": {"@id": "https://www.ourgeo.com/#website"},
+        "about": {"@id": "https://www.ourgeo.com/#geo-service"},
+        "dateModified": "2026-09-18",
+        "inLanguage": "en"
+      },
+      {
+        "@type": "Service",
+        "@id": "https://www.ourgeo.com/#geo-service",
+        "name": "Generative Engine Optimization and AI Search Visibility",
+        "url": "https://www.ourgeo.com/#services",
+        "email": "info@ourgeo.com",
+        "provider": {"@id": "https://www.our.marketing/#organization"},
+        "brand": {"@id": "https://www.ourgeo.com/#brand"},
+        "serviceType": [
+          "Generative Engine Optimization (GEO)",
+          "AI Search Visibility Audit",
+          "Technical SEO",
+          "Entity Optimization",
+          "Structured Data Strategy",
+          "Answer-Led Content Strategy",
+          "AI Citation and Mention Monitoring"
+        ],
+        "areaServed": [
+          {"@type": "Country", "name": "United States"},
+          {"@type": "Country", "name": "United Kingdom"},
+          {"@type": "Country", "name": "Canada"},
+          {"@type": "Country", "name": "Australia"},
+          {"@type": "Place", "name": "Europe"}
+        ],
+        "audience": {
+          "@type": "BusinessAudience",
+          "audienceType": "B2B companies, industrial manufacturers, technology companies, professional services firms and product brands"
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "OurGEO Services",
+          "itemListElement": [
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "AI Search Visibility Audit"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Entity, Technical SEO and Structured Data Optimization"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Answer-Led Content and Information Architecture"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "AI Citation, Mention and Competitor Monitoring"}}
+          ]
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.ourgeo.com/#faq",
+        "url": "https://www.ourgeo.com/#faq",
+        "isPartOf": {"@id": "https://www.ourgeo.com/#website"},
+        "inLanguage": "en",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Generative Engine Optimization?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Generative Engine Optimization (GEO) is the practice of improving how clearly a brand, product or source can be understood and surfaced across AI-powered search and answer experiences. It combines entity clarity, technical foundations, structured information, useful content, source credibility and ongoing visibility measurement."}
+          },
+          {
+            "@type": "Question",
+            "name": "How is GEO different from SEO?",
+            "acceptedAnswer": {"@type": "Answer", "text": "SEO improves discoverability in traditional search, while GEO focuses on how generative systems interpret, synthesize and surface information in AI answers. Strong programs align both disciplines rather than treating them as substitutes."}
+          },
+          {
+            "@type": "Question",
+            "name": "Can you guarantee that an AI platform will recommend my company?",
+            "acceptedAnswer": {"@type": "Answer", "text": "No. AI-generated answers change by model, prompt, source availability and other factors. OurGEO focuses on improving the clarity, technical accessibility, authority and usefulness of your information so it is better positioned to be understood and surfaced when relevant."}
+          },
+          {
+            "@type": "Question",
+            "name": "Which platforms can be included in monitoring?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Monitoring can be designed around major AI discovery environments such as ChatGPT, Google AI experiences, Perplexity, Claude and Microsoft Copilot, depending on the audience, market and commercial goals."}
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a href="#top" class="brand">
+      <span class="brand-mark">G</span>
+      <span>OurGEO</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#why">Why GEO</a>
+      <a href="#services">Services</a>
+      <a href="#framework">How It Works</a>
+      <a href="#use-cases">Use Cases</a>
+      <a href="#faq">FAQ</a>
+      <a href="#audit" class="nav-btn">Get a GEO Audit</a>
+    </nav>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow"><i></i> AI Search & Generative Visibility</span>
+        <h1>Build visibility where <span class="hero-highlight">AI shapes buying decisions.</span></h1>
+        <p class="hero-copy">
+          OurGEO helps B2B companies and ambitious brands compete across AI search, generative answers and organic search by combining
+          entity clarity, technical SEO, structured data, authoritative content and measurable answer visibility.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#audit">Request an AI Search Visibility Audit →</a>
+          <a class="btn btn-secondary" href="#framework">Explore the framework</a>
+        </div>
+
+        <div class="hero-note">
+          Built for B2B, industrial, technology, professional services and product-led companies serving international English-speaking markets.
+        </div>
+      </div>
+
+      <div class="visual">
+        <div class="soft-orb"></div>
+
+        <div class="browser">
+          <div class="browser-top">
+            <div class="dots"><span></span><span></span><span></span></div>
+            <div class="url">AI search result preview</div>
+            <div style="width:28px"></div>
+          </div>
+
+          <div class="browser-body">
+            <div class="mini-label">Buyer research prompt</div>
+            <div class="query-box">
+              Which partners can help a B2B brand improve visibility across AI search and generative answers?
+            </div>
+
+            <div class="answer-card">
+              <div class="mini-label">AI answer</div>
+              <p>
+                Strong AI-search programs combine technical SEO, clear entity signals, structured information,
+                source-worthy content and ongoing visibility measurement across the buyer journey.
+              </p>
+              <div class="brand-chip">✓ OurGEO · GEO + SEO + entity + content</div>
+            </div>
+
+            <div class="answer-card">
+              <div class="mini-label">Signals observed</div>
+              <p>
+                Clear entities · crawlable architecture · structured data · expert content ·
+                answer coverage · consistent brand and product facts
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="visual-metrics"><div class="prompt-card"><strong>120</strong><span>Prompt monitoring</span><span>priority prompts tracked</span></div><div class="score-card"><div class="score-head"><span>Visibility index</span><span>Sample</span></div><div class="score-number">78</div><div class="score-bar"><span></span></div><div class="score-foot">Illustrative benchmark view</div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="platforms">
+    <div class="container">
+      <div class="platform-label">Designed for modern AI and search discovery</div>
+      <div class="platform-grid">
+        <div class="platform">ChatGPT</div>
+        <div class="platform">Google AI</div>
+        <div class="platform">Perplexity</div>
+        <div class="platform">Claude</div>
+        <div class="platform">Microsoft Copilot</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="why" id="why">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Why modern discovery matters</span>
+        <h2>Search is becoming an answer layer—not just a list of links.</h2>
+        <p>
+          Organic search still matters. At the same time, buyers increasingly use AI to research categories, compare solutions,
+          build vendor shortlists and validate decisions before they reach a company website.
+        </p>
+      </div>
+
+      <div class="why-grid">
+        <article class="why-card">
+          <div class="why-no">01 · Buyer behavior</div>
+          <h3>Buyers research in complete questions.</h3>
+          <p>
+            High-intent research is becoming conversational: buyers ask for comparisons, requirements, trade-offs,
+            supplier criteria and practical explanations—not just isolated keywords.
+          </p>
+        </article>
+
+        <article class="why-card">
+          <div class="why-no">02 · Answer visibility</div>
+          <h3>The first impression can happen before the click.</h3>
+          <p>
+            AI-generated answers can shape awareness and consideration inside the interface itself,
+            creating an additional discovery layer alongside traditional search results.
+          </p>
+        </article>
+
+        <article class="why-card">
+          <div class="why-no">03 · Machine-readable clarity</div>
+          <h3>Clear information is easier to interpret.</h3>
+          <p>
+            Consistent entities, crawlable architecture, structured data, useful evidence and well-organized content
+            make it easier for search and AI systems to interpret what a business does and when it is relevant.
+          </p>
+        </article>
+
+        <article class="why-card">
+          <div class="why-no">04 · Category authority</div>
+          <h3>Authority is built across a topic, not a single page.</h3>
+          <p>
+            Strong visibility comes from connected coverage: company facts, services, products, expertise, comparisons,
+            use cases and supporting evidence that reinforce the same market position.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="container services-layout">
+      <div class="sticky">
+        <span class="kicker">OurGEO Services</span>
+        <h2>A disciplined GEO program, built on strong SEO fundamentals.</h2>
+        <p style="color:#647067;line-height:1.7">
+          We connect technical foundations, entity clarity, structured data, content architecture and ongoing measurement
+          into a practical program designed for international B2B and English-language markets.
+        </p>
+      </div>
+
+      <div class="service-list">
+        <article class="service-row">
+          <div class="service-icon">01</div>
+          <div>
+            <h3>AI Search Visibility Audit</h3>
+            <p>
+              Establish a defensible baseline across priority prompts, brand mentions, cited sources,
+              topic coverage, competitor presence and high-value answer scenarios.
+            </p>
+          </div>
+          <span class="service-tag">Baseline</span>
+        </article>
+
+        <article class="service-row">
+          <div class="service-icon">02</div>
+          <div>
+            <h3>Entity, Technical SEO & Structured Data</h3>
+            <p>
+              Strengthen crawlability, information architecture, entity relationships, schema markup and core company facts
+              so search and AI systems can interpret your business more consistently.
+            </p>
+          </div>
+          <span class="service-tag">Foundation</span>
+        </article>
+
+        <article class="service-row">
+          <div class="service-icon">03</div>
+          <div>
+            <h3>Answer-Led Content & Information Architecture</h3>
+            <p>
+              Build category pages, solution content, comparisons, guides, FAQs and expert resources around the real questions
+              buyers ask throughout research, evaluation and procurement.
+            </p>
+          </div>
+          <span class="service-tag">Content</span>
+        </article>
+
+        <article class="service-row">
+          <div class="service-icon">04</div>
+          <div>
+            <h3>AI Citation, Mention & Competitor Monitoring</h3>
+            <p>
+              Monitor how your brand, competitors and source pages appear across priority prompts, then use the findings
+              to improve missing coverage, weak evidence and unclear positioning.
+            </p>
+          </div>
+          <span class="service-tag">Measurement</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="framework" id="framework">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">The OurGEO Framework</span>
+        <h2>A practical system for becoming easier to understand, trust and surface.</h2>
+        <p>
+          Effective GEO is not mass-produced AI copy. It is a repeatable operating system for improving technical access,
+          entity clarity, source quality, topical authority and measurable discovery.
+        </p>
+      </div>
+
+      <div class="framework-grid">
+        <article class="step">
+          <div class="step-no">01 · Discover</div>
+          <h3>Map the current discovery landscape.</h3>
+          <p>
+            Review priority prompts, organic visibility, brand mentions, cited sources, competitors,
+            content gaps and the technical structure that supports discovery.
+          </p>
+        </article>
+
+        <article class="step">
+          <div class="step-no">02 · Clarify</div>
+          <h3>Structure the entity and technical foundation.</h3>
+          <p>
+            Align company facts, offerings, audiences, internal linking, metadata and structured data
+            so important relationships are explicit and machine-readable.
+          </p>
+        </article>
+
+        <article class="step">
+          <div class="step-no">03 · Build</div>
+          <h3>Publish source-worthy content.</h3>
+          <p>
+            Build useful pages around buyer questions, comparisons, category education, use cases,
+            procurement criteria and genuine first-party expertise.
+          </p>
+        </article>
+
+        <article class="step">
+          <div class="step-no">04 · Improve</div>
+          <h3>Measure, learn and improve.</h3>
+          <p>
+            Monitor high-value queries and continuously improve gaps in authority, source coverage,
+            entity consistency, technical accessibility and conversion paths.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="use-cases" id="use-cases">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Who we help</span>
+        <h2>Built for organizations with expertise worth discovering.</h2>
+        <p>
+          OurGEO is designed for companies with real products, services, technical knowledge and market experience
+          that can be organized into credible, machine-readable sources for global buyers.
+        </p>
+      </div>
+
+      <div class="use-grid">
+        <article class="use-card">
+          <span class="use-tag">B2B & Industrial</span>
+          <h3>Manufacturers, OEMs & suppliers</h3>
+          <p>
+            Turn specifications, applications, compliance information and procurement expertise into structured content
+            that helps global buyers evaluate capabilities with greater confidence.
+          </p>
+          <ul class="prompt-list">
+            <li>“Best suppliers for …”</li>
+            <li>“How do I choose a … manufacturer?”</li>
+            <li>“What is the difference between …?”</li>
+          </ul>
+        </article>
+
+        <article class="use-card">
+          <span class="use-tag">Professional Services</span>
+          <h3>Consulting & expert-led firms</h3>
+          <p>
+            Build topical authority around methodology, specialist expertise, proof points and the problems your team is qualified to solve.
+          </p>
+          <ul class="prompt-list">
+            <li>“Which firms specialize in …?”</li>
+            <li>“Who can help with …?”</li>
+            <li>“What should I look for in a provider?”</li>
+          </ul>
+        </article>
+
+        <article class="use-card">
+          <span class="use-tag">Brands & Products</span>
+          <h3>Technology & product-led brands</h3>
+          <p>
+            Improve how products are categorized, differentiated, compared and connected to buyer intent across search and AI discovery.
+          </p>
+          <ul class="prompt-list">
+            <li>“Best products for …”</li>
+            <li>“Is [brand] good for …?”</li>
+            <li>“[Product A] vs [Product B]”</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="proof">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Measurement & governance</span>
+        <h2>Track visibility with evidence, not vanity metrics.</h2>
+        <p>
+          Measurement should connect execution to observable signals: prompt coverage, brand presence, cited sources,
+          entity consistency, content readiness and commercial discovery scenarios.
+        </p>
+      </div>
+
+      <div class="proof-grid">
+        <div class="proof-main">
+          <div class="sample-note">Illustrative reporting view</div>
+          <h3>AI Visibility Dashboard</h3>
+          <p>
+            A practical operating view of priority prompts, brand presence, source coverage, content gaps and competitor movement
+            across the AI-assisted research journey. Metrics shown below are illustrative, not client performance claims.
+          </p>
+
+          <div class="metric-grid">
+            <div class="metric">
+              <strong>120</strong>
+              <span>Tracked prompts</span>
+            </div>
+            <div class="metric">
+              <strong>42</strong>
+              <span>Brand mentions</span>
+            </div>
+            <div class="metric">
+              <strong>78</strong>
+              <span>Visibility index</span>
+            </div>
+            <div class="metric">
+              <strong>+18%</strong>
+              <span>Coverage change</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="proof-side">
+          <article class="side-card">
+            <h4>Prompt coverage</h4>
+            <p>
+              Track high-intent questions by market, funnel stage and topic to identify where your brand is present, absent or inconsistently surfaced.
+            </p>
+          </article>
+
+          <article class="side-card">
+            <h4>Entity consistency</h4>
+            <p>
+              Review whether core company, service and product facts are consistent across key pages and machine-readable signals.
+            </p>
+          </article>
+
+          <article class="side-card">
+            <h4>Competitor comparison</h4>
+            <p>
+              Compare which competitors and sources appear in the same research scenarios, then identify the content and entity gaps worth addressing.
+            </p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="container faq-wrap">
+      <div class="section-head">
+        <span class="kicker">FAQ</span>
+        <h2>Common questions about GEO.</h2>
+      </div>
+
+      <div class="faq-item active">
+        <button class="faq-q" type="button">
+          <span>What is Generative Engine Optimization?</span>
+          <span>+</span>
+        </button>
+        <div class="faq-a">
+          Generative Engine Optimization (GEO) is the practice of improving how clearly a brand,
+          product or source can be understood and surfaced across AI-powered search and answer experiences.
+          It combines entity clarity, technical foundations, structured information, useful content,
+          source credibility and ongoing visibility measurement.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button">
+          <span>How is GEO different from SEO?</span>
+          <span>+</span>
+        </button>
+        <div class="faq-a">
+          SEO improves discoverability in traditional search, while GEO focuses on how generative systems
+          interpret, synthesize and surface information in AI answers. Strong programs align both disciplines
+          rather than treating them as substitutes.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button">
+          <span>Can you guarantee that an AI platform will recommend my company?</span>
+          <span>+</span>
+        </button>
+        <div class="faq-a">
+          No. AI-generated answers change by model, prompt, source availability and other factors. OurGEO focuses
+          on improving the clarity, technical accessibility, authority and usefulness of your information so it is
+          better positioned to be understood and surfaced when relevant.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button">
+          <span>Which platforms can be included in monitoring?</span>
+          <span>+</span>
+        </button>
+        <div class="faq-a">
+          Monitoring can be designed around major AI discovery environments such as ChatGPT,
+          Google AI experiences, Perplexity, Claude and Microsoft Copilot, depending on your audience and market.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section" id="audit">
+    <div class="container">
+      <div class="cta">
+        <div>
+          <span class="eyebrow" style="background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.22);color:white">
+            <i style="background:white"></i> Start with an audit
+          </span>
+          <h2>Start with an AI search visibility audit.</h2>
+          <p>
+            Share your website, target markets and commercial priorities. We will use that context to identify high-value opportunities
+            across technical SEO, entity clarity, structured data, answer coverage and AI-search visibility.
+          </p>
+        </div>
+
+        <form class="form" id="auditForm">
+          <input class="field" type="text" name="name" placeholder="Your name *" required>
+          <input class="field" type="email" name="email" placeholder="Business email *" required>
+          <input class="field" type="text" name="company" placeholder="Company">
+          <input class="field" type="url" name="website" placeholder="Website URL">
+          <select class="field" name="goal">
+            <option value="">Primary goal</option>
+            <option>Improve AI brand visibility</option>
+            <option>Increase product recommendations</option>
+            <option>Build AI-ready content</option>
+            <option>Track competitors</option>
+            <option>SEO + GEO strategy</option>
+          </select>
+          <select class="field" name="industry">
+            <option value="">Industry</option>
+            <option>B2B / Industrial</option>
+            <option>Professional Services</option>
+            <option>Software / SaaS</option>
+            <option>Consumer Brand</option>
+            <option>Other</option>
+          </select>
+          <textarea class="field full" name="message" placeholder="Tell us what you want to improve"></textarea>
+          <button class="btn full" type="submit">Request AI Visibility Audit →</button>
+          <div class="form-status" id="formStatus">
+            Demo form completed. Connect this form to your CRM, email endpoint or API before launch.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="#top" class="brand">
+          <span class="brand-mark">G</span>
+          <span>OurGEO</span>
+        </a>
+        <p class="footer-copy">
+          OurGEO helps B2B companies and product-led brands build stronger visibility across AI search,
+          generative answers and organic discovery through GEO, technical SEO and structured content.
+        </p>
+        <a class="footer-parent" href="https://www.our.marketing/" target="_blank" rel="noopener">
+          A GEO service by <strong>Our.Marketing</strong> ↗
+        </a>
+        <p class="footer-copy" style="margin-top:14px">
+          Business inquiries: <a href="mailto:info@ourgeo.com" style="color:var(--ink);font-weight:700">info@ourgeo.com</a>
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <strong>Services</strong>
+        <a href="#services">AI Search Visibility Audit</a>
+        <a href="#services">Entity & Technical SEO</a>
+        <a href="#services">Answer-Led Content</a>
+        <a href="#services">Monitoring</a>
+      </div>
+
+      <div class="footer-col">
+        <strong>Company</strong>
+        <a href="#framework">Our Framework</a>
+        <a href="#use-cases">Who We Help</a>
+        <a href="#faq">FAQ</a>
+        <a href="#audit">Contact</a>
+        <a href="mailto:info@ourgeo.com">info@ourgeo.com</a>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <span>
+        © <span id="year"></span> Our.Marketing. All rights reserved.
+        OurGEO is a service brand of Our.Marketing.
+      </span>
+      <div class="footer-legal">
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms">Terms of Use</a>
+        <a href="/contact">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const navLinks = document.getElementById('navLinks');
+
+  menuBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('mobile-open');
+  });
+
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => navLinks.classList.remove('mobile-open'));
+  });
+
+  document.querySelectorAll('.faq-q').forEach(button => {
+    button.addEventListener('click', () => {
+      const item = button.parentElement;
+      document.querySelectorAll('.faq-item').forEach(faq => {
+        if (faq !== item) faq.classList.remove('active');
+      });
+      item.classList.toggle('active');
+    });
+  });
+
+  document.getElementById('auditForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    document.getElementById('formStatus').style.display = 'block';
+  });
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
