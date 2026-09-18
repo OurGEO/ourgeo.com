@@ -49,6 +49,8 @@
       --max:1200px;
       --radius:24px;
       --shadow:0 24px 70px rgba(22,35,27,.08);
+      --shadow-soft:0 18px 50px rgba(22,35,27,.06);
+      --shadow-card:0 14px 36px rgba(22,35,27,.07);
     }
 
     *{box-sizing:border-box}
@@ -63,7 +65,7 @@
     }
     a{text-decoration:none;color:inherit}
     button,input,textarea,select{font:inherit}
-    .container{width:min(var(--max),calc(100% - 40px));margin:0 auto}
+    .container{width:min(var(--max),calc(100% - 48px));margin:0 auto}
 
     header{
       position:sticky;
@@ -74,7 +76,7 @@
       border-bottom:1px solid rgba(16,20,17,.06);
     }
     .nav{
-      height:76px;
+      height:74px;
       display:flex;
       align-items:center;
       justify-content:space-between;
@@ -102,14 +104,14 @@
     .nav-links{
       display:flex;
       align-items:center;
-      gap:28px;
-      font-size:14px;
+      gap:26px;
+      font-size:13px;
       color:#56615a;
       font-weight:650;
     }
-    .nav-links a:hover{color:var(--ink)}
+    .nav-links a{transition:color .2s ease}.nav-links a:hover{color:var(--ink)}
     .nav-btn{
-      padding:11px 17px;
+      padding:11px 16px;
       border-radius:999px;
       background:var(--ink);
       color:white;
@@ -124,13 +126,13 @@
     }
 
     .hero{
-      padding:90px 0 60px;
+      padding:86px 0 64px;
     }
     .hero-grid{
       display:grid;
-      grid-template-columns:1.08fr .92fr;
+      grid-template-columns:1.03fr .97fr;
       align-items:center;
-      gap:58px;
+      gap:72px;
     }
     .eyebrow{
       display:inline-flex;
@@ -151,19 +153,19 @@
     }
     h1{
       margin:20px 0 22px;
-      font-size:clamp(50px,7vw,84px);
-      line-height:.98;
+      font-size:clamp(52px,6.4vw,82px);
+      line-height:1;
       letter-spacing:-.06em;
-      max-width:760px;
+      max-width:720px;
     }
     .hero-highlight{
       color:var(--green);
     }
     .hero-copy{
-      max-width:680px;
+      max-width:650px;
       color:var(--ink-soft);
       font-size:18px;
-      line-height:1.75;
+      line-height:1.72;
     }
     .hero-actions{
       display:flex;
@@ -198,8 +200,34 @@
     }
     .hero-note{
       margin-top:20px;
-      color:#7e8881;
+      color:#768179;
       font-size:12px;
+      line-height:1.6;
+    }
+    .hero-points{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px 18px;
+      margin-top:18px;
+      padding-top:18px;
+      border-top:1px solid #e1e6e2;
+      max-width:650px;
+    }
+    .hero-point{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      color:#4f5b53;
+      font-size:12px;
+      font-weight:700;
+    }
+    .hero-point:before{
+      content:"";
+      width:7px;
+      height:7px;
+      border-radius:50%;
+      background:var(--green-2);
+      box-shadow:0 0 0 4px var(--green-soft);
     }
 
     .visual{
@@ -221,8 +249,8 @@
       margin:36px 0 0 30px;
       background:#fff;
       border:1px solid #dfe6e0;
-      border-radius:26px;
-      box-shadow:var(--shadow);
+      border-radius:28px;
+      box-shadow:0 28px 80px rgba(22,35,27,.10);
       overflow:hidden;
     }
     .browser-top{
@@ -244,7 +272,7 @@
       border-radius:999px;
       background:#fff;
     }
-    .browser-body{padding:22px}
+    .browser-body{padding:24px}
     .mini-label{
       font-size:11px;
       color:#6f7c73;
@@ -257,14 +285,14 @@
       background:#f6f8f6;
       border:1px solid #e2e8e3;
       border-radius:16px;
-      padding:15px;
+      padding:16px;
       font-size:14px;
       font-weight:650;
       line-height:1.5;
     }
     .answer-card{
       margin-top:14px;
-      border:1px solid #dde5df;
+      border:1px solid #dfe6e0;
       border-radius:18px;
       padding:18px;
       background:#fff;
@@ -389,10 +417,10 @@
       color:#5a665f;
     }
 
-    section{padding:96px 0}
+    section{padding:108px 0}
     .section-head{
-      max-width:760px;
-      margin-bottom:44px;
+      max-width:790px;
+      margin-bottom:48px;
     }
     .kicker{
       color:var(--green);
@@ -403,7 +431,7 @@
     }
     h2{
       margin:12px 0 16px;
-      font-size:clamp(36px,5vw,56px);
+      font-size:clamp(36px,4.8vw,54px);
       line-height:1.06;
       letter-spacing:-.045em;
     }
@@ -422,18 +450,21 @@
     .why-grid{
       display:grid;
       grid-template-columns:1fr 1fr;
-      gap:16px;
+      gap:18px;
     }
     .why-card{
-      padding:30px;
-      min-height:250px;
+      padding:32px;
+      min-height:270px;
       border-radius:24px;
       border:1px solid #e1e7e2;
       background:#fbfcfb;
+      box-shadow:0 1px 0 rgba(16,20,17,.02);
+      transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease;
     }
-    .why-card:nth-child(2){background:var(--green-soft)}
-    .why-card:nth-child(3){background:var(--blue-soft)}
-    .why-card:nth-child(4){background:var(--sand)}
+    .why-card:nth-child(2){background:#f1f7f3}
+    .why-card:nth-child(3){background:#f6f7f5}
+    .why-card:nth-child(4){background:#f6f2ea}
+    .why-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-card);border-color:#d7dfd9}
     .why-no{
       font-size:12px;
       font-weight:800;
@@ -441,7 +472,7 @@
     }
     .why-card h3{
       font-size:24px;
-      margin:34px 0 12px;
+      margin:38px 0 12px;
       letter-spacing:-.025em;
     }
     .why-card p{
@@ -457,13 +488,13 @@
     }
     .services-layout{
       display:grid;
-      grid-template-columns:.75fr 1.25fr;
-      gap:42px;
+      grid-template-columns:.72fr 1.28fr;
+      gap:64px;
       align-items:start;
     }
     .sticky{
       position:sticky;
-      top:115px;
+      top:108px;
     }
     .service-list{
       border-top:1px solid #dfe5e0;
@@ -473,7 +504,7 @@
       grid-template-columns:54px 1fr auto;
       gap:20px;
       align-items:start;
-      padding:26px 0;
+      padding:30px 0;
       border-bottom:1px solid #dfe5e0;
     }
     .service-icon{
@@ -488,7 +519,7 @@
     }
     .service-row h3{
       margin:0 0 8px;
-      font-size:21px;
+      font-size:22px;
       letter-spacing:-.025em;
     }
     .service-row p{
@@ -520,15 +551,17 @@
     .framework-grid{
       display:grid;
       grid-template-columns:repeat(4,1fr);
-      gap:14px;
+      gap:16px;
     }
     .step{
-      min-height:300px;
-      padding:26px;
+      min-height:310px;
+      padding:28px;
       border-radius:22px;
       border:1px solid rgba(255,255,255,.12);
-      background:rgba(255,255,255,.04);
+      background:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.025));
+      transition:transform .25s ease,border-color .25s ease,background .25s ease;
     }
+    .step:hover{transform:translateY(-3px);border-color:rgba(121,220,176,.32);background:rgba(255,255,255,.06)}
     .step-no{
       font-size:12px;
       color:#79dcb0;
@@ -556,11 +589,15 @@
       gap:16px;
     }
     .use-card{
-      padding:28px;
+      padding:30px;
+      min-height:100%;
       border-radius:24px;
       border:1px solid #e0e6e1;
       background:#fff;
+      box-shadow:0 1px 0 rgba(16,20,17,.02);
+      transition:transform .25s ease,box-shadow .25s ease;
     }
+    .use-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-card)}
     .use-card:nth-child(1){box-shadow:inset 0 4px 0 var(--green-2)}
     .use-card:nth-child(2){box-shadow:inset 0 4px 0 var(--blue)}
     .use-card:nth-child(3){box-shadow:inset 0 4px 0 #c99f50}
@@ -599,14 +636,15 @@
     .proof-grid{
       display:grid;
       grid-template-columns:1fr 1fr;
-      gap:18px;
+      gap:20px;
       align-items:stretch;
     }
     .proof-main{
-      padding:34px;
-      border-radius:26px;
+      padding:38px;
+      border-radius:28px;
       border:1px solid #dfe5e0;
       background:#fff;
+      box-shadow:var(--shadow-soft);
     }
     .proof-main h3{
       margin:0;
@@ -661,7 +699,7 @@
       gap:18px;
     }
     .side-card{
-      padding:28px;
+      padding:30px;
       border-radius:24px;
       border:1px solid #e0e6e1;
       background:#fff;
@@ -680,7 +718,16 @@
     .faq{
       background:#fff;
     }
-    .faq-wrap{max-width:900px}
+    .faq-shell{
+      display:grid;
+      grid-template-columns:.72fr 1.28fr;
+      gap:72px;
+      align-items:start;
+    }
+    .faq-intro{position:sticky;top:108px}
+    .faq-intro .section-head{margin-bottom:0}
+    .faq-list{border-bottom:1px solid #e3e8e4}
+
     .faq-item{
       border-top:1px solid #e3e8e4;
     }
@@ -689,13 +736,13 @@
       width:100%;
       background:none;
       border:0;
-      padding:22px 0;
+      padding:24px 0;
       display:flex;
       justify-content:space-between;
       align-items:center;
       gap:20px;
       text-align:left;
-      font-size:16px;
+      font-size:17px;
       font-weight:750;
       cursor:pointer;
       color:var(--ink);
@@ -717,84 +764,218 @@
     .faq-item.active .faq-q span:last-child{transform:rotate(45deg)}
 
     .cta-section{
-      padding:92px 0;
+      padding:110px 0 116px;
+      background:linear-gradient(180deg,#ffffff 0%,#f4f6f3 100%);
     }
     .cta{
       position:relative;
       overflow:hidden;
       display:grid;
-      grid-template-columns:.9fr 1.1fr;
-      gap:46px;
-      padding:52px;
-      border-radius:30px;
-      background:var(--green);
+      grid-template-columns:.92fr 1.08fr;
+      gap:56px;
+      padding:18px;
+      border-radius:32px;
+      background:#101713;
       color:#fff;
+      box-shadow:0 34px 90px rgba(15,26,19,.16);
+      border:1px solid rgba(255,255,255,.06);
+    }
+    .cta:before{
+      content:"";
+      position:absolute;
+      width:520px;
+      height:520px;
+      left:-260px;
+      bottom:-330px;
+      border-radius:50%;
+      background:radial-gradient(circle,rgba(74,178,127,.22),rgba(74,178,127,0) 68%);
+      pointer-events:none;
     }
     .cta:after{
       content:"";
       position:absolute;
-      width:360px;height:360px;
-      right:-120px;top:-120px;
+      width:420px;
+      height:420px;
+      right:-150px;
+      top:-220px;
       border-radius:50%;
-      background:rgba(255,255,255,.08);
+      background:radial-gradient(circle,rgba(255,255,255,.09),rgba(255,255,255,0) 70%);
+      pointer-events:none;
+    }
+    .cta-copy{
+      position:relative;
+      z-index:1;
+      padding:46px 28px 44px 34px;
+      align-self:center;
+    }
+    .cta-kicker{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      margin-bottom:20px;
+      color:#95d8b7;
+      font-size:11px;
+      font-weight:800;
+      text-transform:uppercase;
+      letter-spacing:.12em;
+    }
+    .cta-kicker:before{
+      content:"";
+      width:7px;
+      height:7px;
+      border-radius:50%;
+      background:#78d9ad;
+      box-shadow:0 0 0 5px rgba(120,217,173,.10);
     }
     .cta h2{
-      margin:0 0 16px;
-      font-size:44px;
+      margin:0 0 18px;
+      max-width:560px;
+      font-size:clamp(40px,4.7vw,58px);
+      line-height:1.02;
+      letter-spacing:-.045em;
+    }
+    .cta-copy>p{
+      margin:0;
+      max-width:560px;
+      color:#b9c4bd;
+      font-size:15px;
+      line-height:1.8;
+    }
+    .audit-points{
+      display:grid;
+      gap:12px;
+      margin:28px 0 0;
+      padding:0;
+      list-style:none;
       max-width:560px;
     }
-    .cta p{
-      margin:0;
-      color:#d7eee3;
-      font-size:15px;
-      line-height:1.7;
+    .audit-points li{
+      display:flex;
+      align-items:flex-start;
+      gap:11px;
+      color:#dfe8e2;
+      font-size:13px;
+      line-height:1.55;
     }
-    .form{
+    .audit-points li:before{
+      content:"✓";
+      flex:0 0 auto;
+      width:20px;
+      height:20px;
+      display:grid;
+      place-items:center;
+      margin-top:1px;
+      border-radius:50%;
+      background:rgba(120,217,173,.12);
+      border:1px solid rgba(120,217,173,.24);
+      color:#8fe0ba;
+      font-size:11px;
+      font-weight:800;
+    }
+    .audit-contact{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px 18px;
+      margin-top:30px;
+      padding-top:22px;
+      border-top:1px solid rgba(255,255,255,.10);
+      color:#8f9d94;
+      font-size:12px;
+    }
+    .audit-contact a{color:#dfe8e2;font-weight:700}
+    .form-card{
       position:relative;
       z-index:2;
+      padding:32px;
+      border-radius:24px;
+      background:#fff;
+      color:var(--ink);
+      box-shadow:0 20px 50px rgba(0,0,0,.18);
+      align-self:stretch;
+    }
+    .form-card-head{margin-bottom:22px}
+    .form-card-head strong{
+      display:block;
+      margin-bottom:7px;
+      font-size:21px;
+      letter-spacing:-.02em;
+    }
+    .form-card-head span{
+      color:#68736b;
+      font-size:13px;
+      line-height:1.55;
+    }
+    .form{
       display:grid;
       grid-template-columns:1fr 1fr;
-      gap:10px;
+      gap:14px;
+    }
+    .form-group{min-width:0}
+    .form-label{
+      display:block;
+      margin:0 0 7px 2px;
+      color:#4f5a53;
+      font-size:11px;
+      font-weight:800;
+      letter-spacing:.02em;
     }
     .field{
       width:100%;
-      height:52px;
-      border:1px solid rgba(255,255,255,.3);
-      border-radius:14px;
-      padding:0 14px;
-      color:#fff;
-      background:rgba(255,255,255,.1);
+      height:50px;
+      border:1px solid #dfe5e0;
+      border-radius:12px;
+      padding:0 13px;
+      color:var(--ink);
+      background:#f8faf8;
       outline:none;
+      transition:border-color .2s ease,box-shadow .2s ease,background .2s ease;
     }
-    .field::placeholder{color:rgba(255,255,255,.72)}
-    textarea.field{height:104px;padding-top:13px;resize:vertical}
+    .field:hover{border-color:#cbd5ce}
+    .field:focus{
+      border-color:#7bae92;
+      background:#fff;
+      box-shadow:0 0 0 4px rgba(31,138,97,.09);
+    }
+    .field::placeholder{color:#9aa39d}
+    textarea.field{height:112px;padding-top:13px;resize:vertical;line-height:1.55}
+    select.field{appearance:auto}
     select.field option{color:#111}
     .full{grid-column:1/-1}
     .form .btn{
-      background:#fff;
-      color:var(--green);
-      border:0;
+      min-height:52px;
+      margin-top:2px;
+      background:var(--green);
+      color:#fff;
+      border:1px solid var(--green);
+      box-shadow:0 12px 26px rgba(23,107,75,.16);
+    }
+    .form .btn:hover{background:#125d40;border-color:#125d40}
+    .form-note{
+      grid-column:1/-1;
+      margin:-2px 2px 0;
+      color:#8a948d;
+      font-size:11px;
+      line-height:1.55;
     }
     .form-status{
       display:none;
       grid-column:1/-1;
       padding:11px 13px;
-      border-radius:12px;
+      border-radius:10px;
       font-size:12px;
       line-height:1.55;
-      margin-top:5px;
     }
     .form-status.is-success{
       display:block;
-      color:#e8fff3;
-      background:rgba(255,255,255,.12);
-      border:1px solid rgba(255,255,255,.2);
+      color:#155d41;
+      background:#eef8f2;
+      border:1px solid #cfe9d9;
     }
     .form-status.is-error{
       display:block;
-      color:#fff2f2;
-      background:rgba(120,20,20,.22);
-      border:1px solid rgba(255,220,220,.28);
+      color:#8a2929;
+      background:#fff4f4;
+      border:1px solid #f0d3d3;
     }
     .form .btn:disabled{
       opacity:.7;
@@ -803,14 +984,14 @@
     }
 
     footer{
-      padding:50px 0 32px;
+      padding:58px 0 34px;
       background:#f3f5f2;
       border-top:1px solid #e2e7e2;
     }
     .footer-grid{
       display:grid;
-      grid-template-columns:1.4fr .6fr .6fr;
-      gap:32px;
+      grid-template-columns:1.5fr .55fr .55fr;
+      gap:48px;
     }
     .footer-copy{
       max-width:440px;
@@ -888,21 +1069,25 @@
         align-items:stretch;
         gap:10px;
       }
-      .hero-grid,.services-layout,.cta{grid-template-columns:1fr}
+      .hero-grid,.services-layout,.cta,.faq-shell{grid-template-columns:1fr}
       .visual{max-width:680px;width:100%}
       .browser,.visual-metrics{margin-left:0}
-      .sticky{position:static}
+      .sticky,.faq-intro{position:static}
       .framework-grid{grid-template-columns:1fr 1fr}
       .use-grid{grid-template-columns:1fr 1fr}
       .proof-grid{grid-template-columns:1fr}
       .platform-grid{grid-template-columns:repeat(3,1fr)}
+      .cta{gap:18px}
+      .cta-copy{padding:38px 32px 26px}
+      .form-card{padding:28px}
+      .faq-shell{gap:30px}
     }
 
     @media (max-width:680px){
       .container{width:min(var(--max),calc(100% - 28px))}
-      .hero{padding-top:56px}
+      .hero{padding:58px 0 44px}
       h1{font-size:48px}
-      section{padding:72px 0}
+      section{padding:78px 0}
       .why-grid,.use-grid,.framework-grid,.footer-grid{grid-template-columns:1fr}
       .platform-grid{grid-template-columns:1fr 1fr}
       .browser{margin-top:20px}
@@ -913,11 +1098,14 @@
       .service-row{grid-template-columns:46px 1fr}
       .service-tag{display:none}
       .metric-grid{grid-template-columns:1fr 1fr}
-      .cta{padding:32px 22px}
-      .cta h2{font-size:38px}
+      .cta{padding:12px;border-radius:24px}
+      .cta-copy{padding:30px 18px 22px}
+      .cta h2{font-size:40px}
+      .form-card{padding:22px;border-radius:18px}
       .form{grid-template-columns:1fr}
       .full{grid-column:auto}
       .copyright{flex-direction:column}
+      .hero-points{gap:10px 14px}
     }
 
     @media (max-width:460px){
@@ -1068,7 +1256,7 @@
       <a href="#framework">How It Works</a>
       <a href="#use-cases">Use Cases</a>
       <a href="#faq">FAQ</a>
-      <a href="#audit" class="nav-btn">Get a GEO Audit</a>
+      <a href="#audit" class="nav-btn">Request an Audit</a>
     </nav>
 
     <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
@@ -1088,12 +1276,17 @@
         </p>
 
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#audit">Request an AI Search Visibility Audit →</a>
+          <a class="btn btn-primary" href="#audit">Request an AI Visibility Audit →</a>
           <a class="btn btn-secondary" href="#framework">Explore the framework</a>
         </div>
 
         <div class="hero-note">
           Built for B2B, industrial, technology, professional services and product-led companies serving international English-speaking markets.
+        </div>
+        <div class="hero-points" aria-label="OurGEO capabilities">
+          <span class="hero-point">Technical SEO foundations</span>
+          <span class="hero-point">Entity & structured data</span>
+          <span class="hero-point">AI visibility measurement</span>
         </div>
       </div>
 
@@ -1437,57 +1630,65 @@
   </section>
 
   <section class="faq" id="faq">
-    <div class="container faq-wrap">
-      <div class="section-head">
-        <span class="kicker">FAQ</span>
-        <h2>Common questions about GEO.</h2>
-      </div>
-
-      <div class="faq-item active">
-        <button class="faq-q" type="button">
-          <span>What is Generative Engine Optimization?</span>
-          <span>+</span>
-        </button>
-        <div class="faq-a">
-          Generative Engine Optimization (GEO) is the practice of improving how clearly a brand,
-          product or source can be understood and surfaced across AI-powered search and answer experiences.
-          It combines entity clarity, technical foundations, structured information, useful content,
-          source credibility and ongoing visibility measurement.
+    <div class="container faq-shell">
+      <div class="faq-intro">
+        <div class="section-head">
+          <span class="kicker">FAQ</span>
+          <h2>Clear answers to common GEO questions.</h2>
+          <p>
+            GEO is still an emerging discipline. These are the questions we most often address when companies evaluate
+            AI-search visibility alongside their existing SEO and content programs.
+          </p>
         </div>
       </div>
 
-      <div class="faq-item">
-        <button class="faq-q" type="button">
-          <span>How is GEO different from SEO?</span>
-          <span>+</span>
-        </button>
-        <div class="faq-a">
-          SEO improves discoverability in traditional search, while GEO focuses on how generative systems
-          interpret, synthesize and surface information in AI answers. Strong programs align both disciplines
-          rather than treating them as substitutes.
+      <div class="faq-list">
+        <div class="faq-item active">
+          <button class="faq-q" type="button">
+            <span>What is Generative Engine Optimization?</span>
+            <span>+</span>
+          </button>
+          <div class="faq-a">
+            Generative Engine Optimization (GEO) is the practice of improving how clearly a brand,
+            product or source can be understood and surfaced across AI-powered search and answer experiences.
+            It combines entity clarity, technical foundations, structured information, useful content,
+            source credibility and ongoing visibility measurement.
+          </div>
         </div>
-      </div>
 
-      <div class="faq-item">
-        <button class="faq-q" type="button">
-          <span>Can you guarantee that an AI platform will recommend my company?</span>
-          <span>+</span>
-        </button>
-        <div class="faq-a">
-          No. AI-generated answers change by model, prompt, source availability and other factors. OurGEO focuses
-          on improving the clarity, technical accessibility, authority and usefulness of your information so it is
-          better positioned to be understood and surfaced when relevant.
+        <div class="faq-item">
+          <button class="faq-q" type="button">
+            <span>How is GEO different from SEO?</span>
+            <span>+</span>
+          </button>
+          <div class="faq-a">
+            SEO improves discoverability in traditional search, while GEO focuses on how generative systems
+            interpret, synthesize and surface information in AI answers. Strong programs align both disciplines
+            rather than treating them as substitutes.
+          </div>
         </div>
-      </div>
 
-      <div class="faq-item">
-        <button class="faq-q" type="button">
-          <span>Which platforms can be included in monitoring?</span>
-          <span>+</span>
-        </button>
-        <div class="faq-a">
-          Monitoring can be designed around major AI discovery environments such as ChatGPT,
-          Google AI experiences, Perplexity, Claude and Microsoft Copilot, depending on your audience and market.
+        <div class="faq-item">
+          <button class="faq-q" type="button">
+            <span>Can you guarantee that an AI platform will recommend my company?</span>
+            <span>+</span>
+          </button>
+          <div class="faq-a">
+            No. AI-generated answers change by model, prompt, source availability and other factors. OurGEO focuses
+            on improving the clarity, technical accessibility, authority and usefulness of your information so it is
+            better positioned to be understood and surfaced when relevant.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" type="button">
+            <span>Which platforms can be included in monitoring?</span>
+            <span>+</span>
+          </button>
+          <div class="faq-a">
+            Monitoring can be designed around major AI discovery environments such as ChatGPT,
+            Google AI experiences, Perplexity, Claude and Microsoft Copilot, depending on your audience and market.
+          </div>
         </div>
       </div>
     </div>
@@ -1496,43 +1697,86 @@
   <section class="cta-section" id="audit">
     <div class="container">
       <div class="cta">
-        <div>
-          <span class="eyebrow" style="background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.22);color:white">
-            <i style="background:white"></i> Start with an audit
-          </span>
-          <h2>Start with an AI search visibility audit.</h2>
+        <div class="cta-copy">
+          <span class="cta-kicker">AI Search Visibility Audit</span>
+          <h2>Understand where your brand stands—and what to improve next.</h2>
           <p>
-            Share your website, target markets and commercial priorities. We will use that context to identify high-value opportunities
-            across technical SEO, entity clarity, structured data, answer coverage and AI-search visibility.
+            Share your website, target markets and commercial priorities. We will use that context to identify
+            the highest-value opportunities across technical SEO, entity clarity, structured data, answer coverage
+            and AI-assisted discovery.
           </p>
+
+          <ul class="audit-points">
+            <li>Review technical and entity signals that affect machine understanding.</li>
+            <li>Map priority buyer questions and high-intent AI search scenarios.</li>
+            <li>Identify content, source and structured-data gaps worth addressing first.</li>
+            <li>Outline practical next steps across SEO, GEO and content architecture.</li>
+          </ul>
+
+          <div class="audit-contact">
+            <span>Prefer email? <a href="mailto:info@ourgeo.com">info@ourgeo.com</a></span>
+            <span>English-language markets · International B2B</span>
+          </div>
         </div>
 
-        <form class="form" id="auditForm">
-          <input class="field" type="text" name="name" autocomplete="name" placeholder="Your name *" required>
-          <input class="field" type="email" name="email" autocomplete="email" placeholder="Business email *" required>
-          <input class="field" type="tel" name="phone" autocomplete="tel" placeholder="Phone / WhatsApp">
-          <input class="field" type="text" name="company" autocomplete="organization" placeholder="Company">
-          <input class="field" type="url" name="website" inputmode="url" placeholder="Company website">
-          <select class="field" name="goal">
-            <option value="">Primary goal</option>
-            <option>Improve AI brand visibility</option>
-            <option>Increase product recommendations</option>
-            <option>Build AI-ready content</option>
-            <option>Track competitors</option>
-            <option>SEO + GEO strategy</option>
-          </select>
-          <select class="field full" name="industry">
-            <option value="">Industry</option>
-            <option>B2B / Industrial</option>
-            <option>Professional Services</option>
-            <option>Software / SaaS</option>
-            <option>Consumer Brand</option>
-            <option>Other</option>
-          </select>
-          <textarea class="field full" name="message" placeholder="Tell us about your goals, target market or current AI search challenges"></textarea>
-          <button class="btn full" type="submit" id="auditSubmit">Request AI Visibility Audit →</button>
-          <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
-        </form>
+        <div class="form-card">
+          <div class="form-card-head">
+            <strong>Request your audit</strong>
+            <span>Tell us a little about your business and what you want to improve.</span>
+          </div>
+
+          <form class="form" id="auditForm">
+            <div class="form-group">
+              <label class="form-label" for="auditName">Name *</label>
+              <input class="field" id="auditName" type="text" name="name" autocomplete="name" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="auditEmail">Business email *</label>
+              <input class="field" id="auditEmail" type="email" name="email" autocomplete="email" placeholder="name@company.com" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="auditPhone">Phone / WhatsApp</label>
+              <input class="field" id="auditPhone" type="tel" name="phone" autocomplete="tel" placeholder="Optional">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="auditCompany">Company</label>
+              <input class="field" id="auditCompany" type="text" name="company" autocomplete="organization" placeholder="Company name">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="auditWebsite">Company website</label>
+              <input class="field" id="auditWebsite" type="url" name="website" inputmode="url" placeholder="https://example.com">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="auditGoal">Primary goal</label>
+              <select class="field" id="auditGoal" name="goal">
+                <option value="">Select a goal</option>
+                <option>Improve AI brand visibility</option>
+                <option>Increase product recommendations</option>
+                <option>Build AI-ready content</option>
+                <option>Track competitors</option>
+                <option>SEO + GEO strategy</option>
+              </select>
+            </div>
+            <div class="form-group full">
+              <label class="form-label" for="auditIndustry">Industry</label>
+              <select class="field" id="auditIndustry" name="industry">
+                <option value="">Select your industry</option>
+                <option>B2B / Industrial</option>
+                <option>Professional Services</option>
+                <option>Software / SaaS</option>
+                <option>Consumer Brand</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group full">
+              <label class="form-label" for="auditMessage">What would you like to improve?</label>
+              <textarea class="field" id="auditMessage" name="message" placeholder="Tell us about your market, current search visibility, target customers or GEO goals."></textarea>
+            </div>
+            <button class="btn full" type="submit" id="auditSubmit">Request AI Visibility Audit →</button>
+            <div class="form-note">By submitting this form, you agree that we may use the information provided to respond to your inquiry.</div>
+            <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+          </form>
+        </div>
       </div>
     </div>
   </section>
