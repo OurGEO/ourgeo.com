@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="OurGEO helps B2B companies and brands improve AI search visibility through GEO, technical SEO, entity optimization, structured data and answer-ready content." />
+  <meta name="description" content="OurGEO helps companies, organizations and brands improve visibility across AI search and organic discovery through GEO, technical SEO, entity optimization, structured data and answer-ready content." />
   <meta name="keywords" content="Generative Engine Optimization, GEO, AI Search Optimization, AI Visibility, Answer Engine Optimization, AEO, Entity SEO, Structured Data, Technical SEO, ChatGPT Search, Google AI Overviews, Perplexity" />
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
   <meta name="googlebot" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
@@ -585,11 +585,11 @@
     }
     .use-grid{
       display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:16px;
+      grid-template-columns:repeat(4,1fr);
+      gap:14px;
     }
     .use-card{
-      padding:30px;
+      padding:26px;
       min-height:100%;
       border-radius:24px;
       border:1px solid #e0e6e1;
@@ -601,6 +601,7 @@
     .use-card:nth-child(1){box-shadow:inset 0 4px 0 var(--green-2)}
     .use-card:nth-child(2){box-shadow:inset 0 4px 0 var(--blue)}
     .use-card:nth-child(3){box-shadow:inset 0 4px 0 #c99f50}
+    .use-card:nth-child(4){box-shadow:inset 0 4px 0 #8f79c9}
     .use-tag{
       font-size:11px;
       text-transform:uppercase;
@@ -609,7 +610,7 @@
       font-weight:800;
     }
     .use-card h3{
-      font-size:23px;
+      font-size:21px;
       margin:22px 0 12px;
       letter-spacing:-.025em;
     }
@@ -764,15 +765,15 @@
     .faq-item.active .faq-q span:last-child{transform:rotate(45deg)}
 
     .cta-section{
-      padding:110px 0 116px;
+      padding:94px 0 98px;
       background:linear-gradient(180deg,#ffffff 0%,#f4f6f3 100%);
     }
     .cta{
       position:relative;
       overflow:hidden;
       display:grid;
-      grid-template-columns:.92fr 1.08fr;
-      gap:56px;
+      grid-template-columns:.94fr 1.06fr;
+      gap:44px;
       padding:18px;
       border-radius:32px;
       background:#101713;
@@ -805,7 +806,7 @@
     .cta-copy{
       position:relative;
       z-index:1;
-      padding:46px 28px 44px 34px;
+      padding:42px 28px 40px 34px;
       align-self:center;
     }
     .cta-kicker{
@@ -876,8 +877,8 @@
       display:flex;
       flex-wrap:wrap;
       gap:10px 18px;
-      margin-top:30px;
-      padding-top:22px;
+      margin-top:26px;
+      padding-top:20px;
       border-top:1px solid rgba(255,255,255,.10);
       color:#8f9d94;
       font-size:12px;
@@ -886,14 +887,14 @@
     .form-card{
       position:relative;
       z-index:2;
-      padding:32px;
+      padding:30px;
       border-radius:24px;
       background:#fff;
       color:var(--ink);
       box-shadow:0 20px 50px rgba(0,0,0,.18);
-      align-self:stretch;
+      align-self:center;
     }
-    .form-card-head{margin-bottom:22px}
+    .form-card-head{margin-bottom:19px}
     .form-card-head strong{
       display:block;
       margin-bottom:7px;
@@ -908,7 +909,7 @@
     .form{
       display:grid;
       grid-template-columns:1fr 1fr;
-      gap:14px;
+      gap:12px 14px;
     }
     .form-group{min-width:0}
     .form-label{
@@ -937,13 +938,13 @@
       box-shadow:0 0 0 4px rgba(31,138,97,.09);
     }
     .field::placeholder{color:#9aa39d}
-    textarea.field{height:112px;padding-top:13px;resize:vertical;line-height:1.55}
+    textarea.field{height:98px;padding-top:13px;resize:vertical;line-height:1.55}
     select.field{appearance:auto}
     select.field option{color:#111}
     .full{grid-column:1/-1}
     .form .btn{
-      min-height:52px;
-      margin-top:2px;
+      min-height:50px;
+      margin-top:0;
       background:var(--green);
       color:#fff;
       border:1px solid var(--green);
@@ -983,18 +984,31 @@
       transform:none;
     }
 
+    .cta .form-card::before{
+      content:"";
+      display:block;
+      width:38px;
+      height:3px;
+      margin:0 0 18px;
+      border-radius:999px;
+      background:linear-gradient(90deg,var(--green),#8fcfaf);
+    }
+    .form-card-head strong{line-height:1.25}
+    .audit-contact span{white-space:normal}
+
     footer{
-      padding:58px 0 34px;
+      padding:50px 0 28px;
       background:#f3f5f2;
       border-top:1px solid #e2e7e2;
     }
     .footer-grid{
       display:grid;
       grid-template-columns:1.5fr .55fr .55fr;
-      gap:48px;
+      gap:42px;
     }
     .footer-copy{
-      max-width:440px;
+      max-width:460px;
+      margin:14px 0 0;
       color:#6e7971;
       font-size:13px;
       line-height:1.7;
@@ -1003,7 +1017,7 @@
       display:inline-flex;
       align-items:center;
       gap:7px;
-      margin-top:4px;
+      margin-top:16px;
       padding:7px 10px;
       border:1px solid #dce3dd;
       border-radius:999px;
@@ -1016,19 +1030,6 @@
       color:var(--ink);
       letter-spacing:-.01em;
     }
-    .footer-legal{
-      display:flex;
-      align-items:center;
-      flex-wrap:wrap;
-      gap:14px;
-    }
-    .footer-legal a{
-      color:#7f8a82;
-      transition:.2s ease;
-    }
-    .footer-legal a:hover{
-      color:var(--ink);
-    }
     .footer-col strong{
       display:block;
       font-size:13px;
@@ -1038,14 +1039,19 @@
       display:block;
       color:#748078;
       font-size:13px;
-      margin:9px 0;
+      margin:8px 0;
+      transition:color .2s ease,transform .2s ease;
+    }
+    .footer-col a:hover{
+      color:var(--ink);
+      transform:translateX(2px);
     }
     .copyright{
-      margin-top:30px;
-      padding-top:22px;
+      margin-top:26px;
+      padding-top:20px;
       border-top:1px solid #dde3de;
       display:flex;
-      justify-content:space-between;
+      justify-content:flex-start;
       gap:20px;
       color:#879189;
       font-size:12px;
@@ -1077,9 +1083,10 @@
       .use-grid{grid-template-columns:1fr 1fr}
       .proof-grid{grid-template-columns:1fr}
       .platform-grid{grid-template-columns:repeat(3,1fr)}
-      .cta{gap:18px}
-      .cta-copy{padding:38px 32px 26px}
-      .form-card{padding:28px}
+      .cta-section{padding:84px 0 88px}
+      .cta{gap:12px}
+      .cta-copy{padding:36px 32px 24px}
+      .form-card{padding:27px}
       .faq-shell{gap:30px}
     }
 
@@ -1098,8 +1105,9 @@
       .service-row{grid-template-columns:46px 1fr}
       .service-tag{display:none}
       .metric-grid{grid-template-columns:1fr 1fr}
-      .cta{padding:12px;border-radius:24px}
-      .cta-copy{padding:30px 18px 22px}
+      .cta-section{padding:68px 0 72px}
+      .cta{padding:10px;border-radius:24px}
+      .cta-copy{padding:28px 18px 20px}
       .cta h2{font-size:40px}
       .form-card{padding:22px;border-radius:18px}
       .form{grid-template-columns:1fr}
@@ -1122,9 +1130,9 @@
     "@graph": [
       {
         "@type": "Organization",
-        "@id": "https://www.our.marketing/#organization",
+        "@id": "https://our.marketing/#organization",
         "name": "Our.Marketing",
-        "url": "https://www.our.marketing/",
+        "url": "https://our.marketing/",
         "email": "info@ourgeo.com",
         "contactPoint": {
           "@type": "ContactPoint",
@@ -1155,7 +1163,7 @@
         "@id": "https://www.ourgeo.com/#website",
         "url": "https://www.ourgeo.com/",
         "name": "OurGEO",
-        "publisher": {"@id": "https://www.our.marketing/#organization"},
+        "publisher": {"@id": "https://our.marketing/#organization"},
         "inLanguage": "en"
       },
       {
@@ -1163,7 +1171,7 @@
         "@id": "https://www.ourgeo.com/#webpage",
         "url": "https://www.ourgeo.com/",
         "name": "OurGEO | Generative Engine Optimization & AI Search Visibility",
-        "description": "OurGEO helps B2B companies and brands improve AI search visibility through GEO, technical SEO, entity optimization, structured data and answer-ready content.",
+        "description": "OurGEO helps companies, organizations and brands improve visibility across AI search and organic discovery through GEO, technical SEO, entity optimization, structured data and answer-ready content.",
         "isPartOf": {"@id": "https://www.ourgeo.com/#website"},
         "about": {"@id": "https://www.ourgeo.com/#geo-service"},
         "dateModified": "2026-09-18",
@@ -1175,7 +1183,7 @@
         "name": "Generative Engine Optimization and AI Search Visibility",
         "url": "https://www.ourgeo.com/#services",
         "email": "info@ourgeo.com",
-        "provider": {"@id": "https://www.our.marketing/#organization"},
+        "provider": {"@id": "https://our.marketing/#organization"},
         "brand": {"@id": "https://www.ourgeo.com/#brand"},
         "serviceType": [
           "Generative Engine Optimization (GEO)",
@@ -1194,8 +1202,8 @@
           {"@type": "Place", "name": "Europe"}
         ],
         "audience": {
-          "@type": "BusinessAudience",
-          "audienceType": "B2B companies, industrial manufacturers, technology companies, professional services firms and product brands"
+          "@type": "Audience",
+          "audienceType": "Companies, organizations and brands across ecommerce, consumer products, professional services, SaaS, technology, manufacturing, local services, multi-location businesses and other commercial sectors"
         },
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
@@ -1271,7 +1279,7 @@
         <span class="eyebrow"><i></i> AI Search & Generative Visibility</span>
         <h1>Build visibility where <span class="hero-highlight">AI shapes buying decisions.</span></h1>
         <p class="hero-copy">
-          OurGEO helps B2B companies and ambitious brands compete across AI search, generative answers and organic search by combining
+          OurGEO helps companies, organizations and brands strengthen visibility across AI search, generative answers and organic search by combining
           entity clarity, technical SEO, structured data, authoritative content and measurable answer visibility.
         </p>
 
@@ -1281,7 +1289,7 @@
         </div>
 
         <div class="hero-note">
-          Built for B2B, industrial, technology, professional services and product-led companies serving international English-speaking markets.
+          Built for companies, organizations and brands across sectors—from growing teams to established enterprises—serving English-speaking and international markets.
         </div>
         <div class="hero-points" aria-label="OurGEO capabilities">
           <span class="hero-point">Technical SEO foundations</span>
@@ -1301,16 +1309,16 @@
           </div>
 
           <div class="browser-body">
-            <div class="mini-label">Buyer research prompt</div>
+            <div class="mini-label">Customer research prompt</div>
             <div class="query-box">
-              Which partners can help a B2B brand improve visibility across AI search and generative answers?
+              Which partners can help a company improve visibility across AI search and generative answers?
             </div>
 
             <div class="answer-card">
               <div class="mini-label">AI answer</div>
               <p>
                 Strong AI-search programs combine technical SEO, clear entity signals, structured information,
-                source-worthy content and ongoing visibility measurement across the buyer journey.
+                source-worthy content and ongoing visibility measurement across the decision journey.
               </p>
               <div class="brand-chip">✓ OurGEO · GEO + SEO + entity + content</div>
             </div>
@@ -1349,18 +1357,18 @@
         <span class="kicker">Why modern discovery matters</span>
         <h2>Search is becoming an answer layer—not just a list of links.</h2>
         <p>
-          Organic search still matters. At the same time, buyers increasingly use AI to research categories, compare solutions,
-          build vendor shortlists and validate decisions before they reach a company website.
+          Organic search still matters. At the same time, people increasingly use AI to research categories, compare options,
+          discover providers and validate decisions before they reach a company website.
         </p>
       </div>
 
       <div class="why-grid">
         <article class="why-card">
-          <div class="why-no">01 · Buyer behavior</div>
-          <h3>Buyers research in complete questions.</h3>
+          <div class="why-no">01 · Research behavior</div>
+          <h3>People research in complete questions.</h3>
           <p>
-            High-intent research is becoming conversational: buyers ask for comparisons, requirements, trade-offs,
-            supplier criteria and practical explanations—not just isolated keywords.
+            High-intent research is becoming conversational: people ask for comparisons, requirements, trade-offs,
+            recommendations and practical explanations—not just isolated keywords.
           </p>
         </article>
 
@@ -1401,7 +1409,7 @@
         <h2>A disciplined GEO program, built on strong SEO fundamentals.</h2>
         <p style="color:#647067;line-height:1.7">
           We connect technical foundations, entity clarity, structured data, content architecture and ongoing measurement
-          into a practical program designed for international B2B and English-language markets.
+          into a practical program designed for companies operating in English-language and international markets.
         </p>
       </div>
 
@@ -1436,7 +1444,7 @@
             <h3>Answer-Led Content & Information Architecture</h3>
             <p>
               Build category pages, solution content, comparisons, guides, FAQs and expert resources around the real questions
-              buyers ask throughout research, evaluation and procurement.
+              customers and decision-makers ask throughout discovery, evaluation and purchase.
             </p>
           </div>
           <span class="service-tag">Content</span>
@@ -1491,8 +1499,8 @@
           <div class="step-no">03 · Build</div>
           <h3>Publish source-worthy content.</h3>
           <p>
-            Build useful pages around buyer questions, comparisons, category education, use cases,
-            procurement criteria and genuine first-party expertise.
+            Build useful pages around customer questions, comparisons, category education, use cases,
+            decision criteria and genuine first-party expertise.
           </p>
         </article>
 
@@ -1512,51 +1520,63 @@
     <div class="container">
       <div class="section-head">
         <span class="kicker">Who we help</span>
-        <h2>Built for organizations with expertise worth discovering.</h2>
+        <h2>Built for organizations of every kind.</h2>
         <p>
-          OurGEO is designed for companies with real products, services, technical knowledge and market experience
-          that can be organized into credible, machine-readable sources for global buyers.
+          Whether you sell products, services, software, expertise or experiences, OurGEO helps turn your website, brand knowledge and market authority
+          into clearer, more credible sources for search engines, AI systems and the people making decisions.
         </p>
       </div>
 
       <div class="use-grid">
         <article class="use-card">
-          <span class="use-tag">B2B & Industrial</span>
-          <h3>Manufacturers, OEMs & suppliers</h3>
+          <span class="use-tag">Commerce & Consumer</span>
+          <h3>Ecommerce, retail & consumer brands</h3>
           <p>
-            Turn specifications, applications, compliance information and procurement expertise into structured content
-            that helps global buyers evaluate capabilities with greater confidence.
+            Improve how products, categories and brand differentiators are understood across AI recommendations, comparisons and purchase research.
           </p>
           <ul class="prompt-list">
-            <li>“Best suppliers for …”</li>
-            <li>“How do I choose a … manufacturer?”</li>
-            <li>“What is the difference between …?”</li>
+            <li>“Best products for …”</li>
+            <li>“Which brand is right for …?”</li>
+            <li>“[Product A] vs [Product B]”</li>
           </ul>
         </article>
 
         <article class="use-card">
-          <span class="use-tag">Professional Services</span>
-          <h3>Consulting & expert-led firms</h3>
+          <span class="use-tag">Services & Expertise</span>
+          <h3>Professional, local & service businesses</h3>
           <p>
-            Build topical authority around methodology, specialist expertise, proof points and the problems your team is qualified to solve.
+            Build authority around expertise, locations, services, proof points and the questions prospective customers ask before choosing a provider.
           </p>
           <ul class="prompt-list">
-            <li>“Which firms specialize in …?”</li>
             <li>“Who can help with …?”</li>
+            <li>“Best service for …”</li>
             <li>“What should I look for in a provider?”</li>
           </ul>
         </article>
 
         <article class="use-card">
-          <span class="use-tag">Brands & Products</span>
-          <h3>Technology & product-led brands</h3>
+          <span class="use-tag">Technology & Digital</span>
+          <h3>SaaS, platforms & technology companies</h3>
           <p>
-            Improve how products are categorized, differentiated, compared and connected to buyer intent across search and AI discovery.
+            Clarify use cases, capabilities, integrations and category positioning so complex offerings are easier to interpret and compare.
           </p>
           <ul class="prompt-list">
-            <li>“Best products for …”</li>
-            <li>“Is [brand] good for …?”</li>
-            <li>“[Product A] vs [Product B]”</li>
+            <li>“Best software for …”</li>
+            <li>“Which platform supports …?”</li>
+            <li>“[Solution A] vs [Solution B]”</li>
+          </ul>
+        </article>
+
+        <article class="use-card">
+          <span class="use-tag">B2B & Industry</span>
+          <h3>Manufacturers, suppliers & industrial companies</h3>
+          <p>
+            Turn specifications, applications, certifications and technical expertise into structured content that supports complex research and supplier evaluation.
+          </p>
+          <ul class="prompt-list">
+            <li>“Best suppliers for …”</li>
+            <li>“How do I choose a … manufacturer?”</li>
+            <li>“What is the difference between …?”</li>
           </ul>
         </article>
       </div>
@@ -1708,14 +1728,14 @@
 
           <ul class="audit-points">
             <li>Review technical and entity signals that affect machine understanding.</li>
-            <li>Map priority buyer questions and high-intent AI search scenarios.</li>
+            <li>Map priority customer questions and high-intent AI search scenarios.</li>
             <li>Identify content, source and structured-data gaps worth addressing first.</li>
             <li>Outline practical next steps across SEO, GEO and content architecture.</li>
           </ul>
 
           <div class="audit-contact">
             <span>Prefer email? <a href="mailto:info@ourgeo.com">info@ourgeo.com</a></span>
-            <span>English-language markets · International B2B</span>
+            <span>English-language markets · Businesses across sectors</span>
           </div>
         </div>
 
@@ -1761,10 +1781,15 @@
               <label class="form-label" for="auditIndustry">Industry</label>
               <select class="field" id="auditIndustry" name="industry">
                 <option value="">Select your industry</option>
-                <option>B2B / Industrial</option>
-                <option>Professional Services</option>
-                <option>Software / SaaS</option>
+                <option>Ecommerce / Retail</option>
                 <option>Consumer Brand</option>
+                <option>Professional / Business Services</option>
+                <option>Local / Multi-location Business</option>
+                <option>Software / SaaS</option>
+                <option>Technology</option>
+                <option>Manufacturing / Industrial</option>
+                <option>Education / Training</option>
+                <option>Media / Publishing</option>
                 <option>Other</option>
               </select>
             </div>
@@ -1792,10 +1817,10 @@
           <span>OurGEO</span>
         </a>
         <p class="footer-copy">
-          OurGEO helps B2B companies and product-led brands build stronger visibility across AI search,
+          OurGEO helps companies, organizations and brands build stronger visibility across AI search,
           generative answers and organic discovery through GEO, technical SEO and structured content.
         </p>
-        <a class="footer-parent" href="https://www.our.marketing/" target="_blank" rel="noopener">
+        <a class="footer-parent" href="https://our.marketing/" target="_blank" rel="noopener">
           A GEO service by <strong>Our.Marketing</strong> ↗
         </a>
         <p class="footer-copy" style="margin-top:14px">
@@ -1823,14 +1848,8 @@
 
     <div class="copyright">
       <span>
-        © <span id="year"></span> Our.Marketing. All rights reserved.
-        OurGEO is a service brand of Our.Marketing.
+        © <span id="year"></span> Our.Marketing. All rights reserved. OurGEO is a service brand of Our.Marketing.
       </span>
-      <div class="footer-legal">
-        <a href="/privacy">Privacy Policy</a>
-        <a href="/terms">Terms of Use</a>
-        <a href="/contact">Contact</a>
-      </div>
     </div>
   </div>
 </footer>
